@@ -1,7 +1,5 @@
 // threads3.rs
-//
-// Execute `rustlings hint threads3` or use the `hint` watch subcommand for a
-// hint.
+// Execute `rustlings hint threads3` or use the `hint` watch subcommand for a hint.
 
 // I AM NOT DONE
 
@@ -48,7 +46,6 @@ fn send_tx(q: Queue, tx: mpsc::Sender<u32>) -> () {
     });
 }
 
-#[test]
 fn main() {
     let (tx, rx) = mpsc::channel();
     let queue = Queue::new();
